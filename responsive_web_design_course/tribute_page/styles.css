@@ -1,0 +1,46 @@
+#image {
+  width: 100%;
+  height: auto;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: cover;
+  object-position: bottom;
+  vertical-align: top;
+}
+
+#image-div {
+  display: inline-block;
+  margin: 20px;
+}
+
+#img-caption {
+  text-align: center;
+  color: orange;
+  font-size: 1.5em;
+}
+
+#title {
+  color: blue;
+  text-align: center;
+}
+
+#tribute-info {
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: justify;
+  color: purple;
+}
+
+#tribute-link {
+  color: red;
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
