@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Coding Survey for Programming Enthusiasts</h1>
+    <p id="description">This is a survey that gathers information about programming languages and tools.</p>
+    <form id="survey-form" action="" method="get">
+      <div class="form-entry">
+        <label for="name" id="name-label">Please enter your name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name Here" required>
+      </div>
+      <div class="form-entry">
+        <label for="email" id="email-label">Please enter your email:</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+      </div>
+      <div class="form-entry">
+        <label for="number" id="number-label">Please enter your age:</label>
+        <input type="number" name="number" id="number"
+      min="0" max="120" placeholder="42" required>
+      </div>
+      <div class="form-entry">
+        <label for="dropdown" id="dropdown-label">What's your favorite programming language?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="">--Please choose an option--</option>
+          <option value="javascript">Javascript</option>
+          <option value="python">Python</option>
+          <option value="ruby">Ruby</option>
+          <option value="c">C</option>
+          <option value="java">Java</option>
+          <option value="php">PHP</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-entry">
+        <p>What's your favorite text editor?</p>
+        <div>
+          <input type="radio" name="text-editor" value="atom">
+          <label for="atom">Atom</label>
+        </div>
+        <div>
+          <input type="radio" name="text-editor" value="sublime">
+          <label for="sublime">Sublime</label>
+        </div>
+        <div>
+          <input type="radio" name="text-editor" value="vim">
+          <label for="vim">VIM</label>
+        </div>
+        <div>
+          <input type="radio" name="text-editor" value="emacs">
+          <label for="emacs">Emacs</label>
+        </div>
+        <div>
+          <input type="radio" name="text-editor" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="form-entry">
+        <p>Which device(s) do you use for programming?</p>
+        <div>
+          <input type="checkbox" name="device" value="laptop">
+          <label for="laptop">Laptop</label>
+        </div>
+        <div>
+          <input type="checkbox" name="device" value="desktop">
+          <label for="desktop">Desktop</label>
+        </div>
+        <div>
+          <input type="checkbox" name="device" value="tablet">
+          <label for="tablet">Tablet</label>
+        </div>
+        <div>
+          <input type="checkbox" name="device" value="phone">
+          <label for="phone">Phone</label>
+        </div>
+      </div>
+      <div class="form-entry">
+        <label for="comments">What do you like most about coding?</label>
+        <div>
+          <textarea name="comments" id="comments" rows="5" cols="50" placeholder="I like programming because..."></textarea>
+        </div>
+      </div>
+      <div class="form-entry">
+        <input type="submit" name="submit" id="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
