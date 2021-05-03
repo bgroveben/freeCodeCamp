@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">Coding Survey for Programming Enthusiasts</h1>
-    <p id="description">This is a survey that gathers information about programming languages and tools.</p>
+    <h1 id="title" class="text-center">Coding Survey for Programming Enthusiasts</h1>
+    <p id="description" class="description text-center">This is a survey that gathers information about programming languages and tools.</p>
     <form id="survey-form" action="" method="get">
-      <div class="form-entry">
+      <div class="form-group">
         <label for="name" id="name-label">Please enter your name:</label>
         <input type="text" name="name" id="name" placeholder="Your Name Here" required>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <label for="email" id="email-label">Please enter your email:</label>
         <input type="email" name="email" id="email" placeholder="example@email.com" required>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <label for="number" id="number-label">Please enter your age:</label>
         <input type="number" name="number" id="number"
       min="0" max="120" placeholder="42" required>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <label for="dropdown" id="dropdown-label">What's your favorite programming language?</label>
         <select name="dropdown" id="dropdown">
           <option value="">--Please choose an option--</option>
@@ -35,7 +35,7 @@
           <option value="other">Other</option>
         </select>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <p>What's your favorite text editor?</p>
         <div>
           <input type="radio" name="text-editor" value="atom">
@@ -58,7 +58,7 @@
           <label for="other">Other</label>
         </div>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <p>Which device(s) do you use for programming?</p>
         <div>
           <input type="checkbox" name="device" value="laptop">
@@ -77,13 +77,13 @@
           <label for="phone">Phone</label>
         </div>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <label for="comments">What do you like most about coding?</label>
         <div>
           <textarea name="comments" id="comments" rows="5" cols="50" placeholder="I like programming because..."></textarea>
         </div>
       </div>
-      <div class="form-entry">
+      <div class="form-group">
         <input type="submit" name="submit" id="submit" value="Submit">
       </div>
     </form>
