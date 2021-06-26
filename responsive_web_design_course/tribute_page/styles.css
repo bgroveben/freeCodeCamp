@@ -2,6 +2,7 @@
   border-color: tomato;
   border-width: 10px;
   border-style: solid;
+  border-radius: 10px;
   max-width: 40em;
   margin-left: auto;
   margin-right: auto;
@@ -10,6 +11,7 @@
 .image-border {
   border-color: seagreen;
   border-width: 5px;
+  border-radius: 5px;
   border-style: solid;
 }
 
@@ -27,14 +29,13 @@
 
 #image-div {
   display: inline-block;
-  margin: 20px;
 }
 
 #img-caption {
   text-align: center;
   color: sienna;
   font-size: 1.5em;
-  margin-top: 1em;
+  margin: 0.75em;
 }
 
 #title {
